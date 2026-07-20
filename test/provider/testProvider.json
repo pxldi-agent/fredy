@@ -56,5 +56,13 @@
   "wohnungsboerse": {
     "url": "https://www.wohnungsboerse.net/searches/index?estate_marketing_types=kauf%2C1&marketing_type=kauf&estate_types%5B0%5D=1&is_rendite=0&estate_id=&zipcodes%5B%5D=&cities%5B%5D=Duesseldorf&districts%5B%5D=&term=D%C3%BCsseldorf&umkreiskm=&pricetext=&minprice=&maxprice=&sizetext=&minsize=&maxsize=&roomstext=&minrooms=&maxrooms=",
     "IsActive": true
+  },
+  "vierwaen": {
+    "url": "https://www.vierwaen.de/rss_angebot.xml",
+    "enabled": true
+  },
+  "suedkurier": {
+    "url": "https://anzeigen.suedkurier.de/category/immobilien/vermietungen/wohnungen/?aLL=47.6779808%2C%209.1736741&aR=10000&city=Konstanz&country=Deutschland",
+    "enabled": true
   }
 }

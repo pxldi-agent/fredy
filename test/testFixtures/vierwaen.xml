@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Aktuelle Angebote für deine vier Wände Suche</title>
+    <link>https://www.vierwaen.de/wohnangebote.html?zip=CITY</link>
+    <description>Aktuelle Angebote für deine vier Wände Suche</description>
+    <language>de-de</language>
+    <item>
+      <title>Schöne DG-Whg in KN-Allmannsdorf</title>
+      <link>https://www.vierwaen.de/1-Zimmer-Wohnung-Konstanz-Universitaetsstadt.A73294.html</link>
+      <description>1 Zimmer Wohnung in Konstanz, Universitätsstadt, Staaderstrasse; Miete: 650€ + 100€; Ab: 01.08.26</description>
+      <pubDate>Mon, 20 Jul 2026 09:26:11 +0200</pubDate>
+      <guid>https://www.vierwaen.de/1-Zimmer-Wohnung-Konstanz-Universitaetsstadt.A73294.html</guid>
+    </item>
+    <item>
+      <title>Helles WG-Zimmer nahe HTWG &amp; Seerhein</title>
+      <link>https://www.vierwaen.de/WG-Zimmer-Konstanz-Universitaetsstadt.A73292.html</link>
+      <description>WG Zimmer in Konstanz, Universitätsstadt, Gartenstraße; Miete: 560€; Ab: 01.08.26</description>
+      <pubDate>Sun, 19 Jul 2026 11:17:10 +0200</pubDate>
+      <guid>https://www.vierwaen.de/WG-Zimmer-Konstanz-Universitaetsstadt.A73292.html</guid>
+    </item>
+  </channel>
+</rss>

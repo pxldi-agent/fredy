@@ -101,6 +101,11 @@ export function buildFetchMock() {
       return { ok: true, status: 200, text: () => Promise.resolve(raw || '') };
     }
 
+    if (urlStr.includes('algolia.net/1/indexes/ep_mps_market_live_m%3Amarketsk_advert_relevance-asc/query')) {
+      const raw = await tryReadFile(path.join(FIXTURES_DIR, 'suedkurier.json'));
+      return { ok: true, status: 200, json: () => Promise.resolve(raw ? JSON.parse(raw) : { hits: [] }) };
+    }
+
     if (urlStr.includes('api.mobile.immobilienscout24.de/search/list')) {
       if (!listData) {
         const raw = await tryReadFile(path.join(FIXTURES_DIR, 'immoscout_list.json'));

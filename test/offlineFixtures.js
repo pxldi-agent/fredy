@@ -70,6 +70,10 @@ export async function readFixture(url) {
   const providerName = hostnameToProvider[hostname];
   if (!providerName) return null;
 
+  if (providerName === 'vierwaen') {
+    return tryReadFile(path.join(FIXTURES_DIR, 'vierwaen.xml'));
+  }
+
   if (providerListPath[providerName] === pathname) {
     return tryReadFile(path.join(FIXTURES_DIR, `${providerName}.html`));
   }
@@ -91,6 +95,11 @@ export function buildFetchMock() {
 
   return async (url) => {
     const urlStr = String(url);
+
+    if (urlStr.includes('vierwaen.de/rss_angebot.xml')) {
+      const raw = await tryReadFile(path.join(FIXTURES_DIR, 'vierwaen.xml'));
+      return { ok: true, status: 200, text: () => Promise.resolve(raw || '') };
+    }
 
     if (urlStr.includes('api.mobile.immobilienscout24.de/search/list')) {
       if (!listData) {

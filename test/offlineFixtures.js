@@ -91,6 +91,10 @@ export async function readFixture(url, options) {
     return detailProvider == null ? null : tryReadFile(path.join(FIXTURES_DIR, `${detailProvider}_detail.html`));
   }
 
+  if (providerName === 'vierwaen') {
+    return tryReadFile(path.join(FIXTURES_DIR, 'vierwaen.xml'));
+  }
+
   if (providerListPath[providerName] === pathname) {
     return tryReadFile(path.join(FIXTURES_DIR, `${providerName}.html`));
   }
@@ -161,6 +165,16 @@ export function buildFetchMock() {
         flatfoxListings = raw ? JSON.parse(raw) : { results: [] };
       }
       return { ok: true, status: 200, json: () => Promise.resolve(flatfoxListings) };
+    }
+
+    if (urlStr.includes('vierwaen.de/rss_angebot.xml')) {
+      const raw = await tryReadFile(path.join(FIXTURES_DIR, 'vierwaen.xml'));
+      return { ok: true, status: 200, text: () => Promise.resolve(raw || '') };
+    }
+
+    if (urlStr.includes('algolia.net/1/indexes/ep_mps_market_live_m%3Amarketsk_advert_relevance-asc/query')) {
+      const raw = await tryReadFile(path.join(FIXTURES_DIR, 'suedkurier.json'));
+      return { ok: true, status: 200, json: () => Promise.resolve(raw ? JSON.parse(raw) : { hits: [] }) };
     }
 
     if (urlStr.includes('api.mobile.immobilienscout24.de/search/list')) {

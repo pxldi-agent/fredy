@@ -1,0 +1,42 @@
+{
+  "hits": [
+    {
+      "id": 3291586,
+      "objectID": "3291586",
+      "price": 1200,
+      "wohnflaeche_de": ["54"],
+      "zimmer_de": ["2 Zimmer"],
+      "tags": [{ "id": 10, "title_de": "Fußbodenheizung" }],
+      "images": [
+        {
+          "src": "/_em_daten/order_images/marketsk/2026/07/10/1/4159623-1.jpg"
+        }
+      ],
+      "zip": ["78464"],
+      "city": ["Konstanz"],
+      "description_de": "2 Zimmer 78464 Konstanz - Staad 54 m², vollmöbliert, KM 1200, NK 150",
+      "title_de": "Vollmöblierte 2-Zimmer-Wohnung in Konstanz-Staad mit Terrasse",
+      "is_sale": false,
+      "categories_plain": ["Immobilien", "Vermietungen", "Wohnungen"],
+      "categories": {
+        "category_lvl_1": { "title_de": "Immobilien > Vermietungen" },
+        "category_lvl_2": { "title_de": "Immobilien > Vermietungen > Wohnungen" }
+      },
+      "uri_de": "/advert/3291586"
+    },
+    {
+      "id": 3296164,
+      "objectID": "3296164",
+      "price": 555000,
+      "wohnflaeche_de": ["95"],
+      "zimmer_de": ["4,5 Zimmer"],
+      "zip": ["78464"],
+      "city": ["Konstanz"],
+      "description_de": "4,5 Zimmer Wohnung zu verkaufen",
+      "title_de": "4,5-Zimmer-Wohnung in Litzelstetten",
+      "is_sale": true,
+      "categories_plain": ["Immobilien", "Verkäufe", "Wohnung"],
+      "uri_de": "/advert/3296164"
+    }
+  ]
+}

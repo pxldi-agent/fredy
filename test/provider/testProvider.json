@@ -76,5 +76,13 @@
   "flatfox": {
     "url": "https://flatfox.ch/de/search/?east=8.62&north=47.43&south=47.32&west=8.44&object_category=APARTMENT&offer_type=RENT",
     "enabled": true
+  },
+  "vierwaen": {
+    "url": "https://www.vierwaen.de/rss_angebot.xml",
+    "enabled": true
+  },
+  "suedkurier": {
+    "url": "https://anzeigen.suedkurier.de/category/immobilien/vermietungen/wohnungen/?aLL=47.6779808%2C%209.1736741&aR=10000&city=Konstanz&country=Deutschland",
+    "enabled": true
   }
 }
